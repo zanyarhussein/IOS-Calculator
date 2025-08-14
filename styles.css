@@ -1,0 +1,96 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #393E46;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 350px;
+    border: 2px solid #333;
+    border-radius: 16px;
+    background: #1C1C1C;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 32px 24px;
+    color: #fff;
+    font-family: inherit;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
+-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.42);
+}
+
+.text-box {
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.text-box input {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 16px 0 8px 0;
+    border-radius: 0;
+    text-align: right;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+}
+
+.button-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+.button-box button {
+    font-size: 2rem;
+    padding: 18px 0;
+    border: none;
+    border-radius: 8px;
+    background: #505050;
+    color: #fff;
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    font-family: inherit;
+}
+.button-box button.operator {
+    background: #FF9500;
+    color: #fff;
+}
+.button-box button.operator:hover {
+    background: #e07d00;
+}
+.button-box button:hover {
+    background: #bdbdbd;
+}
+#equal {
+    background: #FF9500;
+    color: white;
+    grid-column: 3 / 5;
+    grid-row: 4;
+    font-size: 2rem;
+    padding: 18px 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+#equal:hover {
+    background: #e07d00;
+}
+
