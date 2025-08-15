@@ -115,6 +115,7 @@ body {
 .button-box button.clear:hover {
     background: #888;
     color: #fff;
+}
 #equal:hover {
     background: #e07d00;
 }
